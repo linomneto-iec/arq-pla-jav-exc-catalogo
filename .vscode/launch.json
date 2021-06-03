@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-CatalogoMusicasApplication<catalogo-musicas>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "br.com.linomneto.catalogomusicas.CatalogoMusicasApplication",
+            "projectName": "catalogo-musicas",
+            "args": ""
+        }
+    ]
+}
