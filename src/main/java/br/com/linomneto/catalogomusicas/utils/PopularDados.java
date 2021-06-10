@@ -18,7 +18,8 @@ public class PopularDados {
     @Autowired
     private  CatalogoService service;
 
-    //@PostConstruct
+    //deixar descomentado para nao criar novamente estes dados
+    //@PostConstruct 
     public void cadastrarMusicas() {
 
         List<Musica> listaMusica = new ArrayList<>();

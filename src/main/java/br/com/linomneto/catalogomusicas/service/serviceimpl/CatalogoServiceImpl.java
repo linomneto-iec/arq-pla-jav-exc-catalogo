@@ -22,7 +22,7 @@ public class CatalogoServiceImpl implements CatalogoService {
     }
 
     @Override
-    public Musica findById(UUID id) {
+    public Musica findById(Long id) {
         return repository.findById(id).get();
     }
 
@@ -32,7 +32,7 @@ public class CatalogoServiceImpl implements CatalogoService {
     }
 
     @Override
-    public void deleteById(UUID id) {
+    public void deleteById(Long id) {
         repository.deleteById(id);
         
     }
