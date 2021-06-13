@@ -10,13 +10,15 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <span class="navbar-brand mb-0 h1" style="font-weight: bold;">
-            <a href="/musicas">  Catalogo de Músicas </a> </span>
+                <a href="/musicas">Catalogo de Músicas</a> 
+            </span>
+            <a class="btn btn-primary" role="button" th:href="@{/form-editar-musica/{id}(id=${musica.id})}">Editar</a>
         </nav>
     </header>
     <main>
         <div class="container" style="width: 60%; padding-bottom: 30px;">
             <article>
-                <h1 class="card-title" style="font-weight: bold; margin-bottom: 20px;"><span th:text="${musica.nome}" ></span> </h1>
+                <h1 class="card-title" style="font-weight:bold; margin-bottom:20px;"><span th:text="${musica.nome}"></span></h1>
                     <p class="card-subtitle mb-2 text-muted">
                         <i class="material-icons">person_outline</i>
                         <span th:text="${musica.autor}"></span>
@@ -29,6 +31,8 @@
                         <span th:utext="${musica.letra}"></span></p>
                     </section>
             </article>
+            <br />
+            <a href="/musicas" class="btn btn-info" role="button" style="margin-top: 10px;">Voltar</a>
         </div>
     </main>
 </body>
