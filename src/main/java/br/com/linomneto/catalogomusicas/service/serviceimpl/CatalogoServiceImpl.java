@@ -1,7 +1,6 @@
 package br.com.linomneto.catalogomusicas.service.serviceimpl;
 
 import java.util.List;
-import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -2,7 +2,6 @@ package br.com.linomneto.catalogomusicas.controller;
 
 import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import javax.validation.Valid;
 
@@ -49,7 +48,7 @@ public class CatalogoController {
     public String salvarMusica(@Valid Musica musica, BindingResult result, RedirectAttributes attributes) {
         if (result.hasErrors()) {
             attributes.addFlashAttribute("msg","Campos obrigatórios não informados.");
-            return "redirect:/form-musicas";
+            return "redirect:/form-musica";
         }
         musica.setData(new Date());
         service.save(musica);
