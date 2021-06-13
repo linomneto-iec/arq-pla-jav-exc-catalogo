@@ -92,6 +92,7 @@ public class CatalogoController {
         musicaDB.setAutor(musica.getAutor());
         musicaDB.setLetra(musica.getLetra());
         musicaDB.setNome(musica.getNome());
+        musicaDB.setChaveYoutube(musica.getChaveYoutube());
         service.save(musicaDB);
 
         return "redirect:/musicas/" + id;

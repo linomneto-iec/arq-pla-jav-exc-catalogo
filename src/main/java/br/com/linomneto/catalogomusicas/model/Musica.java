@@ -30,6 +30,8 @@ public class Musica {
     
     @NotBlank
     private String autor;
+
+    private String chaveYoutube;
     
     @NotBlank
     @Lob

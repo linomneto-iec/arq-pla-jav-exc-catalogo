@@ -30,6 +30,12 @@
                         <p class="card-text" style="margin-top: 40px;">
                         <span th:utext="${musica.letra}"></span></p>
                     </section>
+                    <br />
+                    <th:block th:if="${musica.chaveYoutube != null && musica.chaveYoutube != ''}">
+                        <iframe width="560" height="315" th:src='@{https://www.youtube.com/embed/{chaveYoutube}?autoplay=1(chaveYoutube=${musica.chaveYoutube})}' title="YouTube video player" frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                        </iframe>
+                    </th:block>
             </article>
             <br />
             <a href="/musicas" class="btn btn-info" role="button" style="margin-top: 10px;">Voltar</a>
